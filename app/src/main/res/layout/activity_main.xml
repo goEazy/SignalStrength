@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.achilles.signalstrength.MainActivity">
+
+    <TableRow
+        android:id="@+id/label"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#da3b35"
+        android:padding="3dp">
+        <TextView
+            android:text="Signal(dBm)"
+            android:id="@+id/lbSignal"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:text="Date - Time"
+            android:layout_weight="3"
+            android:id="@+id/lbDate"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#fff"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/label1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/label"
+        android:padding="3dp">
+        <TextView
+            android:text="Signal(dBm)"
+            android:id="@+id/tvSignal"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:text="Date - Time"
+            android:layout_weight="3"
+            android:id="@+id/tvDate"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/label2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/label1"
+        android:padding="3dp">
+        <TextView
+            android:text="Carrier Name"
+            android:id="@+id/tvCarrier"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:text="--"
+            android:layout_weight="1"
+            android:id="@+id/tvCarrierV"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/label2"
+        android:id="@+id/label3"
+        android:padding="3dp">
+        <TextView
+            android:text="Network Type"
+            android:id="@+id/tvNT"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:text="--"
+            android:layout_weight="1"
+            android:id="@+id/tvNTV"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/label4"
+        android:layout_below="@+id/label3"
+        android:padding="3dp">
+        <TextView
+            android:text="IMEI No"
+            android:id="@+id/tvDID"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:text="--"
+            android:layout_weight="1"
+            android:id="@+id/tvDIDV"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/label5"
+        android:layout_below="@+id/label4"
+        android:padding="3dp">
+        <TextView
+            android:text="Tower ID"
+            android:id="@+id/tvTowID"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:text="--"
+            android:layout_weight="1"
+            android:id="@+id/tvTowIDV"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/label6"
+        android:layout_below="@+id/label5"
+        android:padding="3dp">
+        <TextView
+            android:text="Cell Location"
+            android:id="@+id/tvLoc"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:text="--"
+            android:layout_weight="1"
+            android:id="@+id/tvLocV"
+            android:layout_height="wrap_content"
+            android:layout_width="0px"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </TableRow>
+    <Button
+        android:text="UPLOAD file in server"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bUpload"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/label6"/>
+</RelativeLayout>
+
